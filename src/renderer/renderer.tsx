@@ -27,6 +27,15 @@
  */
 
 import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 
 console.log('👋 This message is being logged by "renderer.js", included via Vite');
+
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+    <React.StrictMode>
+        12312321
+    </React.StrictMode>
+)
+
 
