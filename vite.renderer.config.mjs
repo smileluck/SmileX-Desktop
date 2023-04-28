@@ -17,8 +17,8 @@ export default defineConfig({
                 replacement: resolve(__dirname, 'src'),      // 别名对应地址
             },
             {
-                find: '@components',
-                replacement: resolve(__dirname, 'src/components'),
+                find: '@renderer',
+                replacement: resolve(__dirname, 'src/renderer'),
             }
         ]
     }

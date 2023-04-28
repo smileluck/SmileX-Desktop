@@ -9,8 +9,15 @@ if (require('electron-squirrel-startup')) {
 const createWindow = () => {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    // frame: false,// 是否有边框
+    titleBarStyle: 'hidden',//隐藏状态栏
+    titleBarOverlay: false,//显示 缩小/放大/关闭
+    width: 1024,//默认宽度
+    height: 768,//默认宽度
+    minWidth: 1024,//窗口的最小宽度
+    minHeight: 768,//窗口的最小高度
+    center: true,//是否居中
+    resizable: true,//是否可以调整窗口大小
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
