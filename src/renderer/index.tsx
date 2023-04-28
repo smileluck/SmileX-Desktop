@@ -29,24 +29,11 @@
 import './index.css';
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {
-    createBrowserRouter,
-    RouterProvider,
-} from "react-router-dom";
-import Root from "./routes/";
-import ErrorPage from './compontents/error-page';
-
-const router = createBrowserRouter([
-    {
-        path: "/",
-        element: <Root />,
-        errorElement: <ErrorPage />
-    },
-]);
+import App from "./App"
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <App></App>
     </React.StrictMode>
 )
 
